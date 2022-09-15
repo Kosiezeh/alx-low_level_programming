@@ -1,23 +1,31 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
-* print_number - Prints a number
-* @n: The number to print
-*/
-
-void print_number(int n)
+ * main - main function
+ * Return: 0
+ */
+int main(void)
 {
-	unsigned int num = n;
+	int h = 1;
 
-	if (n < 0)
+	while (h <= 100)
 	{
-		putchar('-');
-		num = -num;
+		if (h % 3 == 0 && h % 5 == 0)
+			printf("FizzBuzz ");
+		else if (h % 5 == 0)
+		{
+			if (h == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+				printf("Buzz ");
+		}
+		else if (h % 3 == 0)
+			printf("Fizz ");
+		else
+			printf("%d ", h);
+	h++;
 	}
-	if (num > 9)
-	{
-		print_number(num / 10);
-	}
-	putchar(num % 10 + '0');
+	return (0);
 }
