@@ -1,18 +1,23 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* _isupper-checks if a character is 
-uppercase or not
-*@c:character to be tested
-* Return: 1 wether it is, 0 otherwise
+* print_number - Prints a number
+* @n: The number to print
 */
 
-int_isupper(int c)
+void print_number(int n)
 {
- if((c>='A')&&(c<='Z'))
-{
- return(1);
-}
+	unsigned int num = n;
 
- return(0);
+	if (n < 0)
+	{
+		putchar('-');
+		num = -num;
+	}
+	if (num > 9)
+	{
+		print_number(num / 10);
+	}
+	putchar(num % 10 + '0');
 }
