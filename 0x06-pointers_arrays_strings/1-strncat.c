@@ -5,7 +5,7 @@
  * @s: the string
  * Return: length of s
  */
-
+char *_strncat(char *dest, char *src, int n);
 int _strlen(char *s)
 {
 	int i;
