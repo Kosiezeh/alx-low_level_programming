@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * _strlen - function that return the lenght of a string
@@ -24,7 +24,7 @@ int _strlen(char *s)
  * Return: a pointer to the resulting string dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n);
 {
 	int ls, ld;
 
