@@ -35,7 +35,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n <= 0)
 		return (dest);
-	n --;
+	n--;
 
 	if (n > ls)
 		n = ls;
