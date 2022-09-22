@@ -15,5 +15,6 @@ void print_number(int);
 char *infinite_add(char *, char *,char *, int);
 void print_buffer(char *, int);
 char *_strncpy(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n);
 
 #endif
